@@ -31,8 +31,8 @@ padding: 10px 30px 20px 30px;
 .scores-list{
   padding: 5px;
 }
-.scores-list:nth-child(odd) {
-  background-color: rgba(128, 128, 128, 0.276);
+.scores-list:nth-child(even) {
+  background-color: #dddd;
 }
 .refresh{
   width: 4rem;
