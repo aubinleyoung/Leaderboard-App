@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap");
+
+body {
+  border: 2px solid black;
+  font-family: "Lato", sans-serif;
+}
+
+#leaderboard-section {
+  padding: 20px;
+}
+
+.leaderboard-title {
+  font-size: 40px;
+}
+
+.leaderboard-block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 30px 20px 30px;
+}
+
+.score-title-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.srores-list-container {
+  border: 1px solid black;
+}
+
+.scores-list {
+  padding: 5px;
+}
+
+.scores-list:nth-child(even) {
+  background-color: #dddd;
+}
+
+.refresh {
+  width: 4rem;
+  height: 2rem;
+  background: white;
+  box-shadow: 3px 2px 4px 2px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.submit {
+  width: 4rem;
+  height: 2rem;
+  background: white;
+  box-shadow: 3px 2px 4px 2px;
+  align-self: flex-end;
+}
+
+.footer {
+  background: gray;
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2560px) {
+  .leaderboard-block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 30px 20px 30px;
+  }
+}
