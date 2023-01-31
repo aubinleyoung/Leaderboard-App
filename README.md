@@ -52,7 +52,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](Not yet availabe)
+- [Click here](https://aubinleyoung.github.io/Leaderboard-App/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
