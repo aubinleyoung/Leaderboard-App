@@ -35,7 +35,7 @@
   - [webpack]
   - [API]
   - [Gitflow]
-  
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -69,17 +69,6 @@ In order to run this project :
 
 1. Make sure you have `Git installed` in your Computer or Install it by following [these steps](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 
-2. Install with npm:
-
-```bash
-npm install --save-dev webpack
-```
-
-3. Install with yarn:
-
-```bash
-yarn add webpack --dev
-```
 
 ### Setup
 
@@ -93,7 +82,10 @@ Clone this repository to your desired folder:
 
 To run the project :
 
-1. In the terminal  execute the following command: npm start
+1. In the terminal  execute the following command:    
+```
+npm start
+```
 2. Navigate through the pages to see different contents
 
 ### Run tests
@@ -115,10 +107,19 @@ For tracking linter errors locally you need to follow these steps:
 
 
 ### Install
+2. Install with npm:
 
+```bash
+npm install --save-dev webpack
 ```
-open the html file
+
+3. Install with yarn:
+
+```bash
+yarn add webpack --dev
 ```
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
