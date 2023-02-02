@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![](./assets/images/allscreen.jpg.jpg)
+![](./assets/images/allscreen.jpg)
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
