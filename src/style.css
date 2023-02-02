@@ -11,7 +11,7 @@ body {
   padding: 20px;
 }
 #scoresList{
-  height: 20px;
+  
   background-color: red;
 }
 .leaderboard-title {
@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 
-.srores-list-container {
+#srores-list-container {
   border: 1px solid black;
 }
 

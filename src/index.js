@@ -6,14 +6,14 @@ const gameId = 'FEM4FXAbEmVFpVXxdPJl';
 const refreshScores = async (gameId) => {
   try {
     const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`);
-    const scores = await response.json();
-  
-    const scoresList = document.getElementById('scoresList');
-    scoresList.innerHTML = ''; // Clear the previous scores
+    const {result} = await response.json();
 
-    scores.forEach((score) => {
-      const scoreItem = document.createElement('li');
-      scoreItem.innerHTML = `${score.player}: ${score.score}`;
+    const scoresList = document.getElementById('srores-list-container');
+    scoresList.innerHTML = ''; // Clear the previous scores
+    result.forEach((score) => {
+      let scoreItem = document.createElement('div');
+      scoreItem.className ="scores-list"
+      scoreItem.innerHTML = `${score.user}: ${score.score}`;
       scoresList.appendChild(scoreItem);
     });
   } catch (error) {
@@ -24,17 +24,17 @@ const refreshScores = async (gameId) => {
 // Function to submit a score for a game
 const submitScore = async (gameId, playerName, score) => {
   try {
-    const data = { player: playerName, score };
+    const data = { user: playerName, score };
     const options = {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' },
     };
     const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`, options);
-    const result = await response.json();
+    const {result} = await response.json();
     console.log(result);
 
-    refreshScores(gameId); // Refresh the scores after submitting a new score
+   // Refresh the scores after submitting a new score
   } catch (error) {
     console.error(error);
   }
@@ -47,8 +47,9 @@ document.getElementById('refreshButton').addEventListener('click', () => {
 });
 
 // Submit button click event handler
-document.getElementById('submitButton').addEventListener('click', () => {
-  const playerName = document.getElementById('playerName').value;
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const playerName = document.getElementById('name').value;
   const score = document.getElementById('score').value;
   submitScore(gameId, playerName, score);
 
