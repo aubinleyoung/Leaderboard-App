@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap");
 
+* {
+  /* border: 1px solid black; */
+}
+
 body {
   border: 2px solid black;
   font-family: "Lato", sans-serif;
@@ -7,6 +11,10 @@ body {
 
 #leaderboard-section {
   padding: 20px;
+}
+
+#scoresList {
+  background-color: red;
 }
 
 .leaderboard-title {
@@ -26,7 +34,7 @@ body {
   align-items: center;
 }
 
-.srores-list-container {
+#srores-list-container {
   border: 1px solid black;
 }
 
