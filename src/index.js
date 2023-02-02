@@ -1,11 +1,13 @@
 // import _ from 'lodash';
 import './style.css';
 
+const gameId = 'FEM4FXAbEmVFpVXxdPJl';
+
 const refreshScores = async (gameId) => {
   try {
-    const response = await fetch(`https://api.leaderboard.com/games/${gameId}/scores`);
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`);
     const scores = await response.json();
-
+  
     const scoresList = document.getElementById('scoresList');
     scoresList.innerHTML = ''; // Clear the previous scores
 
@@ -28,7 +30,7 @@ const submitScore = async (gameId, playerName, score) => {
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' },
     };
-    const response = await fetch(`https://api.leaderboard.com/games/${gameId}/scores`, options);
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`, options);
     const result = await response.json();
     console.log(result);
 
@@ -37,9 +39,6 @@ const submitScore = async (gameId, playerName, score) => {
     console.error(error);
   }
 };
-
-
-const gameId = 'abc123';
 
 // Refresh button click event handler
 document.getElementById('refreshButton').addEventListener('click', () => {
@@ -52,5 +51,5 @@ document.getElementById('submitButton').addEventListener('click', () => {
   const playerName = document.getElementById('playerName').value;
   const score = document.getElementById('score').value;
   submitScore(gameId, playerName, score);
- 
+
 });
