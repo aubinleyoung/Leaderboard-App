@@ -1,20 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap");
 
-* {
-  /* border: 1px solid black; */
-}
-
 body {
-  border: 2px solid black;
   font-family: "Lato", sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  background: #753aa2;
+  padding-bottom: 10vh;
 }
 
 #leaderboard-section {
   padding: 20px;
-}
-
-#scoresList {
-  background-color: red;
 }
 
 .leaderboard-title {
@@ -26,6 +22,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 10px 30px 20px 30px;
+  background: #502770;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
 }
 
 .score-title-button {
@@ -34,8 +35,19 @@ body {
   align-items: center;
 }
 
+/* .recent-scores-container{
+
+} */
 #srores-list-container {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 5px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
 }
 
 .scores-list {
@@ -43,20 +55,32 @@ body {
 }
 
 .scores-list:nth-child(even) {
-  background-color: #dddd;
+  background-color: #753aa2;
+}
+
+.scores-list:nth-child(odd) {
+  background-color: #462063;
 }
 
 .refresh {
-  width: 4rem;
   height: 2rem;
-  background: white;
-  box-shadow: 3px 2px 4px 2px;
+  border-radius: 20px;
+  background-color: #fbd462;
+  border: 1px solid white;
+  padding: 5px;
+  cursor: pointer;
 }
 
 #form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
 }
 
 input {
@@ -65,16 +89,16 @@ input {
 }
 
 .submit {
-  width: 4rem;
   height: 2rem;
-  background: white;
-  box-shadow: 3px 2px 4px 2px;
-  align-self: flex-end;
+  border-radius: 20px;
+  background-color: #fbd462;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .footer {
-  background: gray;
-  position: static;
+  background: #502770;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -88,5 +112,8 @@ input {
     flex-direction: row;
     justify-content: space-around;
     padding: 10px 30px 20px 30px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 }

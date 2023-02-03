@@ -13,7 +13,7 @@ const refreshScores = async (gameId) => {
     result.forEach((score) => {
       const scoreItem = document.createElement('div');
       scoreItem.className = 'scores-list';
-      scoreItem.innerHTML = `${score.user}: ${score.score}`;
+      scoreItem.innerHTML = `${score.user} : ${score.score}`;
       scoresList.appendChild(scoreItem);
     });
   } catch (error) {

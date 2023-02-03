@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![](./assets/images/leaderboard.jpg)
+![](./assets/images/allscreen.jpg)
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -181,6 +181,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
