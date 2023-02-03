@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap");
+::-webkit-scrollbar{
+  margin-right: 10px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 10px;
 
+}
 body {
   font-family: "Lato", sans-serif;
   color: white;
@@ -35,19 +44,22 @@ body {
   align-items: center;
 }
 
-/* .recent-scores-container{
-
-} */
+#scores-list-block{
+  overflow-y: scroll;
+  height: 30vh;
+  border-radius: 10px;
+  box-shadow:
+  inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+  0 0 0 2px rgb(255, 255, 255),
+  0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
+ 
+}
 #srores-list-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border-radius: 10px;
   gap: 5px;
-  box-shadow:
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
+  height: fit-content;
 }
 
 .scores-list {
