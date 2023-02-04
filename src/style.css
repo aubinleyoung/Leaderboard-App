@@ -46,6 +46,8 @@ body {
 
 #scores-list-block{
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
   height: 30vh;
   border-radius: 10px;
   box-shadow:
@@ -54,12 +56,20 @@ body {
   0 0.2em 2em 1em rgba(0, 0, 0, 0.3);
  
 }
+
+.score-refresh{
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+ color: rgba(255, 255, 255, 0.272);
+}
 #srores-list-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 5px;
   height: fit-content;
+  z-index: 10;
 }
 
 .scores-list {
